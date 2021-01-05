@@ -1,9 +1,9 @@
 // ES6 arrow function
-let player = "O";
+let player = 'O';
 let won = false;
 const checkWinner = (firstBox, secondBox, thirdBox) => {
-    if (firstBox != "" && firstBox == secondBox && firstBox == thirdBox) {
-        alert("WINNER! Press ctrl + R to play again");
+    if (firstBox != '' && firstBox == secondBox && firstBox == thirdBox) {
+        alert('WINNER! Press ctrl + R to play again');
         won = true;
     }
 };
@@ -13,7 +13,7 @@ const checkWinner = (firstBox, secondBox, thirdBox) => {
 const place = (box) => {
     if (box.innerText !="" || won) return;
     box.innerText = player;
-    player === "O" ? player = "X" : player = "O";
+    player === 'O' ? player = 'X' : player = 'O';
     gameBoard();
 };
 
