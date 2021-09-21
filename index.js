@@ -1,12 +1,7 @@
 // ES6 arrow function
 let player = 'O';
 let won = false;
-const checkWinner = (firstBox, secondBox, thirdBox) => {
-    if (firstBox != '' && firstBox == secondBox && firstBox == thirdBox) {
-        alert('WINNER! Press ctrl + R to play again');
-        won = true;
-    }
-};
+
 
 // Checks for winning combination.
 
@@ -41,5 +36,11 @@ const gameBoard = () => {
 
 //Loops through the html Div boxes for three matching types.
 
+const checkWinner = (firstBox, secondBox, thirdBox) => {
+    if (firstBox != '' && firstBox == secondBox && firstBox == thirdBox) {
+        alert('WINNER! Press ctrl + R to play again');
+        won = true;
+    }
+};
 
 
